@@ -1,0 +1,182 @@
+/* RESETEO */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3ccd4;
+}
+
+/* COMINEZO HEADER */
+
+header {
+    background-color: #f7f7f7;
+}
+
+h1 {
+    text-align: center;
+}
+
+.navegacion {
+    text-align: center;
+    margin: 0px auto;
+}
+
+.navegacion ul {
+    list-style: none;
+}
+
+.menu li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+    margin: 0px 40px;
+}
+
+/* COMIENZO PAGINA DE INICIO */
+
+.imagenes {
+    display: flex;
+    overflow: auto;
+    margin: 20px;
+    gap: 10px;
+    scroll-behavior: auto;
+}
+
+/* COMIENZO ACERCA DE MI */
+
+.saludo {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.yo {
+    display: flex;
+    margin: 0px 20px;
+    text-align: justify;
+    align-items: center;
+}
+
+.yo p {
+    padding: 20px;
+}
+
+/* COMIENZO INSPIRACIONES */
+
+table {
+    border: 2px solid black;
+    width: 90%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table th {
+    text-align: center;
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+table td {
+    text-align: center;
+    border: 2px solid black;
+    text-align: justify;
+    padding: 20px;
+}
+
+.inspiraciones {
+    text-align: center;
+    margin: 20px;
+    font-weight: 200;
+}
+
+/* COMIENZO PROYECTOS */
+
+.proyectos {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+
+}
+
+.linkproyecto {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.linkproyecto a {
+    background-color: #f4f4f4;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 7px;
+}
+
+.linkreves {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.linkreves a {
+    background-color: #f4f4f4;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 7px;
+}
+
+/* COMIENZO CONTACTOS */
+
+.contacto {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 40px;
+
+}
+
+.contacto-form {
+    transform: translate(-100px);
+}
+
+.contacto-form h2 {
+    margin-top: 40px;
+}
+
+
+.contacto-form h3 {
+    margin-top: 40px;
+}
+
+.contacto-form form div {
+    margin: 20px 0px;
+}
+
+
+/* INICIO FOOTER */
+
+footer ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+footer ul li {
+    margin: 15px 0px;
+}
