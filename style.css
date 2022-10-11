@@ -51,6 +51,10 @@ h1 {
 
 /* COMIENZO PAGINA DE INICIO */
 
+.img-px {
+    width: 980px;
+    height: 400px;
+}
 
 .imagenes {
     display: flex;
@@ -115,12 +119,21 @@ table td {
     display: flex;
     justify-content: space-around;
     margin: 20px;
-
 }
 
 .linkproyecto {
     display: flex;
     flex-flow: column nowrap;
+}
+
+.transition:hover {
+    transform: scale(1.1);
+}
+
+.transition img {
+    transition-delay: 3s;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
 }
 
 .linkproyecto a {
