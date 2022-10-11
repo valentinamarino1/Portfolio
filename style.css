@@ -19,6 +19,10 @@ header {
     background-color: #f7f7f7;
 }
 
+.navegar {
+    width: 100%;
+}
+
 .nav-img {
     width: 15%;
 }
@@ -51,9 +55,9 @@ h1 {
 
 /* COMIENZO PAGINA DE INICIO */
 
-.img-px {
-    width: 980px;
-    height: 400px;
+.container {
+    width: 75%;
+    height: 100%;
 }
 
 .imagenes {
@@ -67,19 +71,29 @@ h1 {
 /* COMIENZO ACERCA DE MI */
 
 .saludo {
+
     margin-left: 20px;
     margin-top: 15px;
+    text-align: center;
 }
 
 .yo {
     display: flex;
+    flex-flow: column nowrap;
     margin: 0px 20px;
     text-align: justify;
     align-items: center;
 }
 
-.yo p {
+.yo div p {
     padding: 20px;
+    text-align: justify;
+}
+
+.img img {
+    width: 300px;
+    height: 400px;
+    padding: 25px;
 }
 
 /* COMIENZO INSPIRACIONES */
@@ -197,4 +211,24 @@ footer ul {
 
 footer ul li {
     margin: 15px 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .img img {
+        width: 400px;
+        height: 500px;
+        padding: 25px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .yo {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .img img {
+        width: 500px;
+        height: 600px;
+    }
 }
