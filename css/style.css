@@ -146,6 +146,7 @@ h1 {
 
 .proyectos {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
     margin: 20px;
 }
@@ -175,11 +176,6 @@ h1 {
     margin-top: 7px;
 }
 
-.linkreves {
-    display: flex;
-    flex-flow: column-reverse;
-}
-
 .linkreves a {
     background-color: #f4f4f4;
     color: black;
@@ -194,13 +190,23 @@ h1 {
 
 .contacto {
     display: flex;
-    justify-content: space-evenly;
+    flex-flow: column nowrap;
+    justify-content: space-around;
     margin: 20px 40px;
+}
 
+.mapa {
+    width: 100%;
 }
 
 .contacto-form {
-    transform: translate(-100px);
+    border: 2px solid rgb(162, 58, 117);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+
 }
 
 .contacto-form h2 {
@@ -238,6 +244,11 @@ footer ul li {
     .inspiraciones-titulo {
         font-size: 1.5rem;
     }
+
+    .contacto {
+        display: flex;
+        flex-flow: row nowrap;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -261,6 +272,15 @@ footer ul li {
     .inspiraciones div p {
         text-align: center;
         font-size: 1rem;
+    }
+
+    .linkreves {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    .mapa {
+        width: 135%;
     }
 }
 
@@ -296,5 +316,9 @@ footer ul li {
     .inspiraciones-joe div img {
         width: 400px;
         height: 500px;
+    }
+
+    .mapa {
+        width: 200%;
     }
 }
