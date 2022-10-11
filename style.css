@@ -98,33 +98,48 @@ h1 {
 
 /* COMIENZO INSPIRACIONES */
 
-table {
-    border: 2px solid black;
-    width: 90%;
-    text-align: center;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-table th {
-    text-align: center;
-    border: 2px solid black;
-    text-align: center;
-    padding: 20px;
-}
-
-table td {
-    text-align: center;
-    border: 2px solid black;
-    text-align: justify;
-    padding: 20px;
+.contenedor-inspiraciones {
+    margin: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 20px;
 }
 
 .inspiraciones {
+    border: 2px solid rgb(162, 58, 117);
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.inspiraciones-titulo {
     text-align: center;
-    margin: 20px;
-    font-weight: 200;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.inspiraciones div p {
+    text-align: center;
+}
+
+.img-inspiraciones {
+    width: 300px;
+    height: 400px;
+    padding: 25px;
+}
+
+.inspiraciones-zaha {
+    grid-area: zaha;
+}
+
+.inspiraciones-peter {
+    grid-area: peter;
+}
+
+.inspiraciones-joe {
+    grid-area: joe;
 }
 
 /* COMIENZO PROYECTOS */
@@ -219,9 +234,14 @@ footer ul li {
         height: 500px;
         padding: 25px;
     }
+
+    .inspiraciones-titulo {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
+
     .yo {
         display: flex;
         flex-flow: row nowrap;
@@ -230,5 +250,51 @@ footer ul li {
     .img img {
         width: 500px;
         height: 600px;
+    }
+
+    .contenedor-inspiraciones {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    .inspiraciones div p {
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .contenedor-inspiraciones {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "zaha zaha joe"
+            "peter peter joe";
+    }
+
+    .img-inspiraciones {
+        width: 250px;
+        height: 350px;
+    }
+
+    .inspiraciones-zaha {
+        flex-flow: row;
+    }
+
+    .inspiraciones-peter {
+        flex-flow: row;
+    }
+
+    .inspiraciones-joe {
+        height: 100%;
+        justify-content: space-around;
+    }
+
+    .inspiraciones-joe div img {
+        width: 400px;
+        height: 500px;
     }
 }
