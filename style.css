@@ -19,6 +19,10 @@ header {
     background-color: #f7f7f7;
 }
 
+.nav-img {
+    width: 15%;
+}
+
 h1 {
     text-align: center;
 }
@@ -46,6 +50,7 @@ h1 {
 }
 
 /* COMIENZO PAGINA DE INICIO */
+
 
 .imagenes {
     display: flex;
